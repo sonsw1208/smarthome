@@ -1,0 +1,55 @@
+
+  /* Áp dụng CSS cho thiết bị có chiều rộng tối đa là 768px */
+  .toggleButton {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    box-shadow: none;
+    color: inherit;
+    appearance: none;
+    touch-action: manipulation;
+  
+   
+  }
+  
+  .slider {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .toggleButton.active .slider {
+    transform: translateX(100%);
+    background-color: green;
+  }
+
+  .toggleButton.active {
+    background-color: rgb(178, 236, 178);
+  }
+  
+  .toggleButton.active .icon-light {
+    color: yellow;
+
+  }
+  
+  .lmr-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+
